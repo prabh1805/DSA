@@ -31,10 +31,14 @@ void solve() {
 	cin >> L >> R;
 	vector<bool> isPrime = segmentedSeive(L, R);
 
-	i64 num;
-	cin >> num;
+	int Q;
+	cin >> Q;
 
-	cout << (isPrime[num - L] ? "Yes" : "No") << '\n';
+	while (Q--) {
+		i64 num;
+		cin >> num;
+		cout << (isPrime[num - L] ? "Yes" : "No") << '\n';
+	}
 }
 
 int main() {
