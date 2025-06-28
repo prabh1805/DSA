@@ -1,2 +1,52 @@
-# Ignore all executable files
-*.exe
+# Ignore everything by default
+*
+
+# Allow specific file types (whitelist)
+!*.cpp
+!*.java
+
+# --- Common OS and IDE related files to explicitly ignore (highly recommended) ---
+
+# macOS specific files
+.DS_Store
+
+# Common Linux/macOS executable name (if you compile without -o)
+!a.out # If you want to track a.out - but usually you don't.
+       # It's better to explicitly ignore it by keeping this line commented or removing !
+a.out
+
+# Object files (temporary files from compilation)
+*.o
+
+# Common C/C++ generated files
+*.gch # Precompiled headers
+*.out # Generic executable output (sometimes used on Linux/macOS)
+*.exe # Windows executables
+*.dll # Windows dynamic libraries
+*.lib # Windows static libraries
+
+# Java specific generated files
+*.class # Compiled Java bytecode
+*.jar   # Java Archive files
+
+# IDE/Editor specific files and directories
+.vscode/        # VS Code settings
+.idea/          # IntelliJ/CLion settings
+*.iml           # IntelliJ IDEA module files
+target/         # Maven/Gradle build directory for Java projects
+build/          # General build directory
+bin/            # General binary directory
+
+# Other common temporary or hidden files
+*~              # Backup files
+.#* # Emacs lock files
+.#*#            # Emacs backup files
+#*#             # Emacs auto-save files
+.tags           # Ctags files
+.cache/         # Cache directories
+npm-debug.log   # npm debug logs (if you use Node.js for anything)
+yarn-debug.log
+yarn-error.log
+
+# Logs
+*.log
