@@ -2,8 +2,10 @@
 * @Author: Prabhat Jha
 * @Date:   2026-02-01 23:37:15
 * @Last Modified by:   prabhatjha
-* @Last Modified time: 2026-02-02 00:29:49
+* @Last Modified time: 2026-02-02 00:35:17
+* @Problem Link: https://atcoder.jp/contests/dp/tasks/dp_d
 */
+
 #include "bits/stdc++.h"
 using namespace std;
 #define all(x) x.begin(), x.end()
