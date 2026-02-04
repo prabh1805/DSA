@@ -2,7 +2,7 @@
 * @Author: Prabhat Jha
 * @Date:   2026-02-03 01:51:30
 * @Last Modified by:   prabhatjha
-* @Last Modified time: 2026-02-03 19:24:24
+* @Last Modified time: 2026-02-03 22:22:37
 */
 
 #include<bits/stdc++.h>
@@ -96,6 +96,7 @@ int countPartitionsTabularSpaceOptimized(vector<int>& nums, int D) {
 	}
 	return dp[target];
 }
+10011 -
 int main() {
 	vector<int> nums = {1, 1, 2, 3};
 	int D = 1;
